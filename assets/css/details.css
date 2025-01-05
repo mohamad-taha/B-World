@@ -1,0 +1,92 @@
+.bookCard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bookCard img {
+  width: 476px;
+  height: 600px;
+}
+.bookCard .bookCardBody {
+  color: var(--black-color);
+  width: 698px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  div {
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    p:last-child {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+.bookCard .bookCardBody .mountCount {
+  display: flex;
+  gap: 10px;
+  .mountBtn {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black-color);
+  }
+}
+.bookCard .bookCardActions {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  button {
+    width: 49%;
+  }
+}
+.bookCard .bookCardBody .bookCardFooter {
+  padding-top: 37px;
+  border-top: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .bookStat {
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    span {
+      color: var(--primary-color);
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+/* -------------------------media----------------------- */
+@media (max-width: 767px) {
+  .bookCard img {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .bookCard .bookCardBody {
+    height: max-content;
+    gap: 30px;
+  }
+}
