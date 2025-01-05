@@ -31,8 +31,8 @@ localStorage.setItem("themeMode", body.getAttribute("data-theme"));
 
 logo.src =
   dataTheme === "dark"
-    ? "./assets/imgs/dark-logo.svg"
-    : "./assets/imgs/logo.svg";
+    ? "./assets/imgs/dark-Logo.svg"
+    : "./assets/imgs/Logo.svg";
 
 modeSwitchBtn[0].innerHTML =
   dataTheme === "dark"
