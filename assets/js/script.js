@@ -27,6 +27,7 @@ window.onresize = () => {
 };
 
 body.setAttribute("data-theme", dataTheme ?? "light");
+localStorage.setItem("themeMode", body.getAttribute("data-theme"));
 
 logo.src =
   dataTheme === "dark"
