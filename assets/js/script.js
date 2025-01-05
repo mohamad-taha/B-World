@@ -56,8 +56,8 @@ modeSwitchBtn.forEach((mode) => {
 
     logo.src =
       newTheme === "dark"
-        ? "./assets/imgs/dark-logo.svg"
-        : "./assets/imgs/logo.svg";
+        ? "./assets/imgs/dark-Logo.svg"
+        : "./assets/imgs/Logo.svg";
 
     modeSwitchBtn[0].innerHTML =
       newTheme === "dark"
